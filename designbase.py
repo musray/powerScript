@@ -3,12 +3,13 @@ import os
 import shutil
 dirs = [
     '1 input',
-    '2 previous',
-    '3 editable',
-    '4 import',
-    '5 export',
-    '6 CheckEvidence',
-    '7 互查单',
+    '2 reference',
+    '3 previous',
+    '4 editable',
+    '5 import',
+    '6 export',
+    '7 CheckEvidence',
+    '8 互查单',
 ]
 
 config_skeletron = '''
