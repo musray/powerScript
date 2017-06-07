@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import time
+import datetime
 import pyautogui
 
 
@@ -13,7 +14,8 @@ def move():
 def main():
     duration = 900 # move the mouse every 15 minutes 
     while True:
-        print('wait %d seconds.' % duration)
+        now = datetime.datetime.now()
+        print('%s , wait %d seconds.' % (now, duration))
         time.sleep(duration) # 15 seconds
         move()
 
