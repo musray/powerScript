@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import os
 lst = os.listdir('./')
 with open('./lst.txt', 'w') as f:
