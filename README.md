@@ -3,7 +3,6 @@
 
 ## cinbase (python3)
 功能：生成CIN适用的工作文件夹
-
 用法：`python cinbase.py`
 
 ## designbase
