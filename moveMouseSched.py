@@ -12,7 +12,7 @@ def move():
 
 
 def main():
-    duration = 900 # move the mouse every 15 minutes 
+    duration = 600 # move the mouse every 10 minutes 
     while True:
         now = datetime.datetime.now()
         print('%s , wait %d seconds.' % (now, duration))
