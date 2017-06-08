@@ -6,13 +6,20 @@ import pyautogui
 
 
 def move():
-    where = pyautogui.position()
-    new_position = (where[0] + 1, where[1])  # move the mouse to right by 1px
-    pyautogui.moveTo(new_position)
+    for i in range(10):
+        where = pyautogui.position()
+        new_position = (where[0] + 200, where[1])  # move the mouse to right by 1px
+        pyautogui.moveTo(new_position)
+
+        time.sleep(1)
+
+        where = pyautogui.position()
+        new_position = (where[0] - 200, where[1])  # move the mouse to right by 1px
+        pyautogui.moveTo(new_position)
 
 
 def main():
-    duration = 600 # move the mouse every 10 minutes 
+    duration = 10 # move the mouse every 10 minutes 
     while True:
         now = datetime.datetime.now()
         print('%s , wait %d seconds.' % (now, duration))

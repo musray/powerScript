@@ -16,6 +16,9 @@ def main(path):
     # 获得一个walk的结果的list
     # list里的每一个元素，是一个len=3的tuple
     # (文件夹绝对路径, [该路径内的文件夹名称], [该路径内的文件名称]])
+
+    # DEBUG 改写path DEGUB后删除
+    # path = '//sccm/广利核软件共享'
     items = list(os.walk(path))
 
     # 准备存储所有的文件
@@ -52,4 +55,5 @@ if __name__ == '__main__':
 
     # for DEBUG
     # PATH = r'H:\EAST_Project\TestProject\TestProject'
+    # PATH = '/sccm/广利核软件共享'
 
