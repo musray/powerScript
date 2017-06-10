@@ -3,6 +3,7 @@
 
 ## cinbase (python3)
 功能：生成CIN适用的工作文件夹
+
 用法：`python cinbase.py`
 
 ## designbase
@@ -24,6 +25,10 @@ pass
 1. 新建file_text文件夹  `TODO`: 当file_text文件夹不存在时，新建一个
 2. `python ListHere.py [可选参数为目标文件夹的绝对路径]`
 注意：在windows下，如果路径有空格，要用双引号""将其包围
+
+### TODO
+1. 在结果txt文件的开头，提醒用户那些关键字被ignore了。
+2. 在结果txt文件中，每行生成两列，第一列是文件名（basename），第二列是完整的地址。
 
 ## moveMouseSched
 功能: 每隔一段时间将鼠标向左移动1px
