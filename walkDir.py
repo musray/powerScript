@@ -42,6 +42,8 @@ def main(path):
             # 如果文件名中不包含需要忽略的字符:
             if not should_ignore(file):
                 f.write(file)
+                f.write('\t')
+                f.write(os.path.basename(file))
                 f.write('\n')
 
 
