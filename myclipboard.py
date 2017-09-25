@@ -5,7 +5,8 @@ import os
 
 def getText():
 	w.OpenClipboard()
-	d = w.GetClipboardData(win32con.CF_TEXT)
+	# d = w.GetClipboardData(win32con.CF_TEXT)
+	d = w.GetClipboardData()
 	w.CloseClipboard()
 	return d
 
@@ -23,4 +24,3 @@ with open('clipboard.txt','a') as f:
 
 os_command = "notepad.exe clipboard.txt"
 os.system(os_command)
-
